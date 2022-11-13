@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Practica 1</title>
+</head>
+
+<!--
+ Nuestro objetivo es contruir un portfolio sobre nosotros, con las siguientes secciones:
+README con toda la información necesaria para facilitar la forma de evaluar la
+práctica.
+-->
+
+<body>
+
+    <!--
+ Header deberá tener 1 imagen de fondo, optimizada para distintas resoluciones
+(opcional).
+    -->
+    <header>
+        <figure>
+            <img class="logo" src="imagenes/portfolio.png">
+        </figure>
+    </header>
+    <main>
+
+        <!--
+Barra de navegación con links a cada elemento del protfolio. 
+Todos los links tendrán que tener el estado hover suavizado con una transición. 
+Estos links no son necesarios en la versión mobile como viene en los anexos.
+        -->
+        <nav>
+            <hr>
+            <ul>
+                <li>
+                    <a href="">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="">Habilidades</a>
+                </li>
+                <li>
+                    <a href="">Contacta conmigo</a>
+                </li>
+                <li>
+                    <a href="">Mis redes sociales</a>
+                </li>
+            </ul>
+            <hr>
+        </nav>
+        <section>
+            <h1>Hola!! Soy Anna Lise y éste es mi portfolio</h1>
+            <h2>Sobre mí</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, dignissimos voluptates adipisci
+                explicabo nihil itaque ipsum eveniet quos quo esse cum recusandae sed similique assumenda autem saepe
+                voluptatum corporis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                perferendis ea, quibusdam pariatur, temporibus dolore tenetur at aperiam sint impedit odio id alias odit
+                consectetur nemo repellendus sequi fuga. Inventore!</p>
+        </section>
+
+        <!--
+Una sección con nuestras skill de programación y progreso de las mismas. 
+Esta sección tiene que contar con barras de progreso animadas con animaciones css
+        -->
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            
+                <label for="file">Canto</label>
+                <progress id="file" max="100" value="60"> 60% </progress>
+            
+            
+                <label for="file">Lectura</label>
+                <progress id="file" max="100" value="30"> 30% </progress>
+            
+            
+                <label for="file">Dormir</label>
+                <progress id="file" max="100" value="10"> 10% </progress>
+            
+            
+                <label for="file">Tiktok</label>
+                <progress id="file" max="100" value="90"> 90% </progress>
+            
+        </section>
+
+        <!--
+Formulario de contacto con estos inputs. Todos ellos tienen que tener tanto los tipos
+correctos como la validación html de cada input.
+○ Nombre - (requerido)
+○ Apellidos - (requerido)
+○ Telefono - (requerido)
+○ Unos radio button para responder a la pregunta "¿como me conociste?" -
+(requerido)
+■ Universidad
+■ Keepcoding kick-off
+■ Colegio
+■ En Github
+○ Tag de github (Usar regexp para la validación - @username)
+○ descripción (max 180 characters) - (requerido)
+○ Boton de guardado
+        -->
+        <form action="/Form/registro_completado.html" method="POST">
+
+            <div>
+                <h2 class="formulario">Contacta conmigo</h2>
+            </div>
+
+            <div>
+                <label for="fname">Nombre:</label>
+                <input type="text" placeholder="Añade tu nombre" id="fname" name="fname" required>
+            </div>
+
+            <div>
+                <label for="lname">Apellido:</label>
+                <input type="text" placeholder="Añade tu apellido" id="lname" name="lname" required>
+            </div>
+
+            <div>
+                <label for="tel">Teléfono:</label>
+                <input type="tel" placeholder="Añade tu teléfono" id="tel" name="tel" pattern="[0-9]+" required>
+            </div>
+
+            <div>
+                <label for="github">Usuario Github:</label>
+                <input type="text" placeholder="@<username>" id="github" name="github" pattern="^@[^\s]+" required>
+            </div>
+
+            <fieldset>
+
+                <legend>¿Cómo me conociste?</legend>
+
+                <label>
+                    <input type="radio" name="lugar" value="Universidad"> Universidad
+                </label>
+
+                <label>
+                    <input type="radio" name="lugar" value="Keepcoding kick-off"> Keepcoding kick-off
+                </label>
+
+                <label>
+                    <input type="radio" name="lugar" value="Colegio"> Colegio
+                </label>
+
+                <label>
+                    <input type="radio" name="lugar" value="Github"> Github
+                </label>
+
+                <label>
+                    <input type="radio" name="lugar" value="LinkedIn"> LinkedIn
+                </label>
+
+            </fieldset>
+
+            <div class="info">
+                <label for="informacion">Información adicional:</label>
+            </div>
+            <div>
+                <textarea name="información" id="información">
+                </textarea>
+            </div>
+            <button type="submit" value="Enviar">Enviar</button>
+
+        </form>
+
+        <!--
+Footer con links a nuestras redes sociales. Importante tener en cuenta que son links
+a un recurso externo y tenemos no queremos dejar información nuestra en esas webs.
+        -->
+    </main>
+
+    <footer>
+
+        <nav class="navFooter">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=es">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=es">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/es/">Tiktok</a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.es/">Pinterest</a>
+                </li>
+                <li>
+                    <a href="https://outlook.live.com/owa/">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/">Github</a>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>

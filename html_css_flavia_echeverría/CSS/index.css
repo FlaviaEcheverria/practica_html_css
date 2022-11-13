@@ -1,0 +1,135 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+body {
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    text-align: center;
+}
+
+.logo {
+    width: 40%;
+}
+
+
+nav {
+    list-style-type: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+li{
+    display:inline-block;
+    margin-inline-end: 10px;
+    margin-inline-start: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+}
+
+nav a:hover {
+    color: #7b71e9;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.habilidades {
+    font-size: 1.6vw;
+    margin-bottom: 3%; 
+}
+
+h2 {
+    font-size: 1.8vw;
+}
+
+section {
+    display: inline-block;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+form {
+    width: 80vw;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:gainsboro;
+    margin-bottom: 5%;
+}
+
+.formulario {
+    margin-bottom: 3%;
+}
+
+form label {
+    width:12vw;
+	font-weight:bold;
+	display:inline-block;
+    font-size: 1.5vw;
+}
+
+button {
+	font-weight:bold;
+    font-size: 1.5vw;
+}
+
+legend {
+    font-size: 2vw;
+    padding-top: 3%;
+}
+
+.info {
+    margin-top: 3%;
+}
+
+
+fieldset{
+    border-radius: 3px;
+
+}
+
+#información {
+    width:99%;
+    height: 20vw;
+	border-radius:3px;
+	margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+div .formulario {
+    display: inline-flex;
+    font-size: 1.9vw;
+
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+}
+
+.navFooter a {
+     color: white;
+     display: inline;
+ }
